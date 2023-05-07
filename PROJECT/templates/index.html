@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <style>
+        a{
+            text-decoration: none;
+            color : white;
+        }
+    </style>
+</head>
+<body style="text-align : center;margin : 0">
+    <div class="upper" style="text-align : center;padding-left : 40px;background-color: black;padding-top : 40px;padding-bottom : 50px;" >
+        <table style="text-align : center;padding-top : 2%" cellpadding="10">
+            <tr>
+                <td>
+                    <p><a href="dtp.html"><image src="{{ url_for('static', filename='image1.jpg') }}" width="280px" height="140px" alt="Image is not supported" title="Docx to pdf converter" draggable="true"><br>Docx to pdf</image></a></p>
+                </td>
+                <td>
+                    <p><a href="ptd.html"><image src="{{ url_for('static', filename='image2.jpg') }}" width="280px" height="140px" alt="Image is not supported" title="Pdf to docx converter" draggable="true"><br>pdf to docx</image></a></p>
+                </td>
+                <td>
+                    <p><a href="pth.html"><image src="{{ url_for('static', filename='image3.png') }}" width="280px" height="140px" alt="Image is not supported" title="pdf to html converter" draggable="true"><br>pdf to html</image></a></p>
+                </td>
+                <td>
+                    <p><a href="ptr.html"><image src="{{ url_for('static', filename='image4.png') }}" width="280px" height="140px" alt="Image is not supported" title="pdf to rtf converter" draggable="true"><br>pdf to rtf</image></a></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="lower" style="background-color: bisque; ">
+    <table style="padding-top : 3%;padding-left: 10%;padding-right: 10%;padding-bottom:3%">
+        <tr>
+            <td>
+                <image src="{{ url_for('static', filename='idea.png') }}" width="30" height="30" alt="unable to load file"></image><br>
+                <p><b>How to compress a PDF</b></p>
+                <p>Just drag-and-drop your PDF file in the box above, wait for the commpression to complete and download your file. it's that simple</p>
+            </td>
+            <td>
+                <image src="{{ url_for('static', filename='lock.png') }}" width="30" height="30" alt="unable to load file"></image><br>
+                <p><b>Security guaranteed</b></p>
+                <p>Your files will be permanently deleted from our services.No one has access to your files and privacy is 100% guaranteed.</p>
+            </td>
+            <td>
+                <image src="{{ url_for('static', filename='like.png') }}" width="30" height="30" alt="unable to load file"></image><br>
+                <p><b>Easy to use.</b></p>
+                <p>Drag and drop your file, wait a few seconds while it shrinks and download it with a single click. The process is quick and secure.</p>
+            </td>
+        </tr>
+        </table>
+    </div>
+</body>
+</html>

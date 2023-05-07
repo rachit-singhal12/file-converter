@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body align="center" style="background-color: rgba(rgb(89, 74, 74), green, blue, alpha);" >
+    <br><br>
+    <div>
+        <h1 style="font-size : 60px">PDF to HTML Converter</h1>
+        <p style="font-size : 20px">Convert your pdf file to html document with incredible accuracy.</p><br><br>
+        <form action="{{ url_for('pth_submit') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" value="Select word file" required/ ><br><br>
+            <input style="padding:10px;font-size : 25px;background-color: black;color : aliceblue;border: none;" type="submit" value="download file" name="submit" enctype="multipart/form-data">
+        </form>
+    </div>
+</body>
+</html>
