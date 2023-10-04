@@ -1,0 +1,34 @@
+Question 1<!DOCTYPE html><html><head><style> /* Style for containers */ 
+.container { width: 200px; height: 200px; border: 2px solid #ccc; padding: 10px;
+ margin: 10px; float: left; }
+ /* Style for images */ .image { width: 100px; height: 100px; margin: 5px; 
+cursor: pointer; }</style></head><body>
+<!-- First container --><div id="container1" class="container" 
+ondrop="drop(event)" ondragover="allowDrop(event)"> <p>Container 1</p></div>
+<!-- Second container --><div id="container2" class="container" 
+ondrop="drop(event)" ondragover="allowDrop(event)"> <p>Container 2</p></div>
+<!-- Images to be dragged --><img src="image1.jpg" id="image1" class="image" 
+draggable="true" ondragstart="drag(event)"><img src="image2.jpg" id="image2" 
+class="image" draggable="true" ondragstart="drag(event)"><img src="image3.jpg" 
+id="image3" class="image" draggable="true" ondragstart="drag(event)"><img 
+src="image4.jpg" id="image4" class="image" draggable="true" 
+ondragstart="drag(event)">
+<script>function allowDrop(event) { event.preventDefault();}
+function drag(event) { event.dataTransfer.setData("imageId", event.target.id);}
+function drop(event) { event.preventDefault(); var imageId = 
+event.dataTransfer.getData("imageId"); var targetContainer = event.target;
+ if (targetContainer.classList.contains("container")) { 
+targetContainer.appendChild(document.getElementById(imageId)); }}</script>
+</body></html>
+
+
+
+Questin 2<!DOCTYPE html><html><head><style> /* Style for the container */ 
+.container { width: 100px; height: 100px; background-color: blue; animation: 
+changeSizeAndColor 4s ease-in-out infinite alternate; }
+ /* Keyframes animation */ @keyframes changeSizeAndColor { 0% { width: 100px; 
+height: 100px; background-color: blue; } 50% { width: 200px; height: 200px; 
+background-color: red; } 100% { width: 100px; height: 100px; background-color: 
+blue; } }</style></head><body>
+<!-- Container to animate --><div class="container"></div>
+</body></html>
